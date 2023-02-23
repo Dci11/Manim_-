@@ -1,2 +1,1 @@
-# Manim_-
-通过manim 模拟碰撞
+# Manim_-作品集
