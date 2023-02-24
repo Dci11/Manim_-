@@ -44,13 +44,6 @@ class Box_ColisionExample(Scene):
             sq1_center= cir.get_center()[0]
             side_len  = sq1.side_length
             if abs(sq1_center-right_line) <= 0.5*side_len or abs(sq1_center-left_line) <=0.5*side_len :
-                cir.v =[- cir.v[0]*cir.elastic,0]
-        def sq2_box_wall_JudgeFunction(cir,dt):
-            left_line = line.get_left()[0]
-            right_line = line.get_right()[0]
-            sq1_center= cir.get_center()[0]
-            side_len  = sq2.side_length
-            if abs(sq1_center-right_line) <= 0.5*side_len or abs(sq1_center-left_line) <=0.5*side_len :
                 cir.v =[- cir.v[0]*cir.elastic,0]          
 
         #光滑地面
